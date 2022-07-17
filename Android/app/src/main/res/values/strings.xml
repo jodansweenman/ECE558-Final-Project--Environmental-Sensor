@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HistoricalEnviromentTracker</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="chart_fragment_label">Chart Fragment</string>
+    <string name="controller_fragment_label">Controller Fragment</string>
+    <string name="next">Controller</string>
+    <string name="previous">Chart</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="calculation_range_label">Calculation on Data From</string>
+    <string name="Time_Separator">:</string>
+    <string name="date_separator">/</string>
+</resources>

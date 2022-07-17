@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PerSensorChartFragment">
+
+    <fragment
+        android:id="@+id/PerSensorChartFragment"
+        android:name="ECE558.historicalenviromenttracker.PerSensorChartFragment"
+        android:label="@string/chart_fragment_label"
+        tools:layout="@layout/fragment_per_sensor_chart">
+
+        <action
+            android:id="@+id/action_PerSensorChartFragment_to_PerSensorControllerFragment"
+            app:destination="@id/PerSensorControllerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PerSensorControllerFragment"
+        android:name="ECE558.historicalenviromenttracker.PerSensorControllerFragment"
+        android:label="@string/controller_fragment_label"
+        tools:layout="@layout/fragment_per_sensor_controller">
+
+        <action
+            android:id="@+id/action_PerSensorControllerFragment_to_PerSensorChartFragment"
+            app:destination="@id/PerSensorChartFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // Explanation https://stackoverflow.com/questions/50726435/difference-among-mavencentral-jcenter-and-mavenlocal
+    }
+}
+rootProject.name = "HistoricalEnviromentTracker"
+include ':app'

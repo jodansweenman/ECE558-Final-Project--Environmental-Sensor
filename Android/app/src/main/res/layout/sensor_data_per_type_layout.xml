@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/DisplayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/DataLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/DataTypeDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/DataTypeView"
+                        android:layout_width="@dimen/data_label_width"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:text= "Data Name"/>
+
+                    <TextView
+                        android:id="@+id/NodeNameView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Node 1" />
+
+                    <TextView
+                        android:id="@+id/SampleNumberView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="#" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/AnalysisLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/MeanLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/MeanTitleView"
+                            android:layout_width="@dimen/data_label_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mean" />
+
+                        <TextView
+                            android:id="@+id/MeanValueView"
+                            android:layout_width="@dimen/data_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ModeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ModeTitleView"
+                            android:layout_width="@dimen/data_label_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Mode" />
+
+                        <TextView
+                            android:id="@+id/ModeValueView"
+                            android:layout_width="@dimen/data_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/MedianLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/MedianTitleView"
+                            android:layout_width="@dimen/data_label_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Median" />
+
+                        <TextView
+                            android:id="@+id/MedianValueView"
+                            android:layout_width="@dimen/data_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/MaxLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/MaximumTitleView"
+                            android:layout_width="@dimen/data_label_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Maximum"/>
+
+                        <TextView
+                            android:id="@+id/MaximumValueView"
+                            android:layout_width="@dimen/data_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/MinimumLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/MinimumTitleView"
+                            android:layout_width="@dimen/data_label_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Minimum" />
+
+                        <TextView
+                            android:id="@+id/MinimumValueView"
+                            android:layout_width="@dimen/data_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/StandardDeviationLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/StandardDeviationTitleView"
+                            android:layout_width="@dimen/data_label_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Standard Deviation" />
+
+                        <TextView
+                            android:id="@+id/StandardDeviationValueView"
+                            android:layout_width="@dimen/data_width"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/RangeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/DataAnalysisRangeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calculation_range_label" />
+
+                <TextView
+                    android:id="@+id/StartDataRangeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxWidth="248dp"
+                    android:minWidth="64dp"
+                    />
+                <include
+                    android:id="@+id/start_range_io"
+                    layout="@layout/date_time_layout" />
+                <TextView
+                    android:id="@+id/DataRangeTransitionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" to " />
+
+                <TextView
+                    android:id="@+id/EndDataRangeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:maxWidth="248dp"
+                    android:minWidth="64dp"
+                    />
+                <include
+                    android:id="@+id/end_range_io"
+                    layout="@layout/date_time_layout" />
+
+            </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+Need to make methode from controlling Sampling rate from Android
+
+Need to make method from controlling Range from Android
+
+Need to make method for selecting which data to graph from Android
+
+Need to make method for only generating display layout for data types that are being received
